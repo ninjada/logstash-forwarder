@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# General Script to Download, Install & Configure Logstash-forwarder for AWS EC2 Instance
+# By NinjadaWhite jadawhite@gmail.com
 # Download + Install logstash-forwarder rpm
 
 cd /home/ec2-user/logtash-forwarder;

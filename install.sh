@@ -4,7 +4,7 @@
 # Download + Install logstash-forwarder rpm
 
 cd /home/ec2-user/logtash-forwarder;
-sudo curl -O http://packages.elasticsearch.org/logstashforwarder/centos/logstash-forwarder-0.3.1-1.x86_64.rpm;
+sudo curl -O http://jadawhite.com/logstash-forwarder-0.3.1-1.x86_64.rpm;
 sudo rpm -ivh /home/ec2-user/logstash-forwarder/logstash-forwarder-0.3.1-1.x86_64.rpm;
 
 # Copy logstash forwarder init script 

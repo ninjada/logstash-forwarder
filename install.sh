@@ -4,11 +4,11 @@
 # Download + Install logstash-forwarder rpm
 
 cd /home/ec2-user/logtash-forwarder;
-sudo curl -O http://jadawhite.com/logstash-forwarder-0.3.1-1.x86_64.rpm;
+sudo curl -O http://ninjada.com/logstash/logstash-forwarder-0.3.1-1.x86_64.rpm;
 sudo rpm -ivh /home/ec2-user/logstash-forwarder/logstash-forwarder-0.3.1-1.x86_64.rpm;
 
 # Copy logstash forwarder init script 
-sudo curl -o /etc/init.d/logstash-forwarder http://logstashbook.com/code/4/logstash_forwarder_redhat_init;
+sudo curl -o /etc/init.d/logstash-forwarder http://ninjada.com/logstash/logstash_forwarder_redhat_init;
 sudo chmod +x /etc/init.d/logstash-forwarder;
 
 # Init depends on file at /etc/sysconfig/logstash-forwarder

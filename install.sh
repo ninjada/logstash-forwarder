@@ -4,11 +4,11 @@
 # Download + Install logstash-forwarder rpm
 
 # Server Config Types
-srvVarn='cat /home/ec2-user/logstash-forwarder/cfg/prod-varnish.cfg'
-srvCont='cat /home/ec2-user/logstash-forwarder/cfg/prod-content.cfg'
-srvData='cat /home/ec2-user/logstash-forwarder/cfg/prod-data-service.cfg'
-srvWeb='cat /home/ec2-user/logstash-forwarder/cfg/prod-web-eph.cfg'
-srvWebApi='cat /home/ec2-user/logstash-forwarder/cfg/prod-web-api-eph.cfg'
+srvVarn='/home/ec2-user/logstash-forwarder/cfg/prod-varnish.cfg'
+srvCont='/home/ec2-user/logstash-forwarder/cfg/prod-content.cfg'
+srvData='/home/ec2-user/logstash-forwarder/cfg/prod-data-service.cfg'
+srvWeb='/home/ec2-user/logstash-forwarder/cfg/prod-web-eph.cfg'
+srvWebApi='/home/ec2-user/logstash-forwarder/cfg/prod-web-api-eph.cfg'
 
 # Install  logstash-forwarder
 cd /home/ec2-user/logtash-forwarder;
@@ -25,7 +25,7 @@ sudo cp /home/ec2-user/logstash-forwarder/logstash-forwarder1 /etc/sysconfig/log
 
 # Create and configure /etc/logstash-forwarder 
 cd /home/ec2-user/logstash-forwarder;
-sudo $srvVarn /etc/logstash-forwarder;
+sudo cp $srvVarn /etc/logstash-forwarder;
 
 # Chkconfig
 sudo chkconfig --add logstash-forwarder;

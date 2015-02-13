@@ -28,7 +28,7 @@ sudo cp $srvVarn /etc/logstash-forwarder;
 
 # Copy Logrotate Files
 sudo cp logrotate.hourly /etc/cron.hourly/;
-sudo cp logrotate.hourly.conf /etc/
+sudo cp logrotate.hourly.conf /etc/;
 
 # Chkconfig
 sudo chkconfig --add logstash-forwarder;

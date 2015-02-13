@@ -34,5 +34,10 @@ sudo chmod +x /etc/init.d/logstash-forwarder;
 sudo chkconfig --add logstash-forwarder;
 sudo service logstash-forwarder start;
 
+# Varnishncsa specifics
+# sudo chkconfig varnishncsa on;
+# sudo service varnishncsa start;
+# sudo sed -i 's/DAEMON_OPTS="-a -w $logfile -D -P $pidfile"/DAEMON_OPTS="-f -w $logfile -D -P $pidfile"/g' /etc/init.d/varnishncsa;
+
 # Add SSL Cert
 # TBC

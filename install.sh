@@ -24,8 +24,11 @@ cd /home/ec2-user/logstash-forwarder;
 sudo cp /home/ec2-user/logstash-forwarder/logstash-forwarder1 /etc/sysconfig/logstash-forwarder;
 
 # Create and configure /etc/logstash-forwarder 
-cd /home/ec2-user/logstash-forwarder;
 sudo cp $srvVarn /etc/logstash-forwarder;
+
+# Copy Logrotate Files
+sudo cp logrotate.hourly /etc/cron.hourly/;
+sudo cp logrotate.hourly.conf /etc/
 
 # Chkconfig
 sudo chkconfig --add logstash-forwarder;

@@ -16,6 +16,10 @@ cd /home/ec2-user/logtash-forwarder;
 sudo curl -O http://ninjada.com/logstash/logstash-forwarder-0.4.0-1.x86_64.rpm;
 sudo rpm -ivh /home/ec2-user/logstash-forwarder/logstash-forwarder-0.4.0-1.x86_64.rpm;
 
+# aws s3 cp s3://stackla-provisioning/logstash/logstash-forwarder-0.4.0-1.x86_64.rpm .;
+# rpm -ivh /home/ec2-user/logstash-forwarder/logstash-forwarder-0.4.0-1.x86_64.rpm;
+# aws s3 cp s3://stackla-provisioning/logstash/logstash-forwarder.crt /etc/pki/tls/certs/
+
 # Init depends on file at /etc/sysconfig/logstash-forwarder
 #sudo cp /home/ec2-user/logstash-forwarder/logstash-forwarder1 /etc/sysconfig/logstash-forwarder;
 
